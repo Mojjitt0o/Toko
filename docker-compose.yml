@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgresql
+      POSTGRES_USER: postgres
+      POSTGRES_DB: bingleshop
+  app:
+    image: bingle-app
+    build: .
+    ports:
+      - 8880:8000

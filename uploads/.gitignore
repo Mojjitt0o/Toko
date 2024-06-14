@@ -1,0 +1,6 @@
+# ignore media files
+*.jpeg
+*.jpg
+*.png
+
+!dummy.jpg
